@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Pictures</h1>
+<div class="container-fluid">
+<div class="row">
+  <% @pictures.each do |picture| %>
+     <div class="col-md-4">
+        
+          <%= link_to image_tag(picture.image.url(:thumb), class: "img-responsive"), picture %>
+             
+         
+      
+     </div>
+   <% end %>
+ </div>
+</div>
+
+
+
+
+<br>
+<p>
+<%= link_to 'New Picture', new_picture_path %>
+</p>
