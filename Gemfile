@@ -35,7 +35,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap-sass'
 gem 'paperclip'
 gem 'aws-sdk', '~> 2.0.0'
-
+gem 'puma'
 # Use Unicorn as the app server
 # gem 'unicorn'
 
